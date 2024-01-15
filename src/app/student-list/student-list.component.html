@@ -1,0 +1,20 @@
+<h2>
+    {{msg}}
+</h2>
+<input type="button" value="send msg" (click)="sendMessage()"/>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Stud Id</th>
+            <th>Name</th>
+            <th>Marks</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let s of studentList">
+            <td>{{s.sid}}</td>
+            <td>{{s.name}}</td>
+            <td>{{s.marks}}</td>
+        </tr>
+    </tbody>
+</table>
